@@ -605,240 +605,2349 @@ footer strong{color:#fff}
         <div class="timeline-dot"></div>
         <h3>FIET LAND ดินแดนแห่งการเรียนรู้ ครั้งที่ 1.5 — มจธ.</h3>
         <p>
-          เข้าฐานวิศวกรรมโยธาและวิศวกรรมเคมี โดยฐานโยธาได้เรียนรู้โครงสร้างอาคาร
-          การใช้เซนเซอร์ตรวจวัดความสั่นสะเทือนของอาคาร และร่วมกิจกรรมบอร์ดเกม
-          ที่จำลองการวางแผนสร้างบ้าน ส่วนฐานวิศวกรรมเคมีได้เรียนรู้การแยกสาร
-          และการกลั่นน้ำ ทำให้เห็นภาพการเรียนและการประยุกต์ใช้วิศวกรรมหลายสาขา
-        </p>
-      </div>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <h3>K-Engineering World Tour and Workshop 2025 — สจล.</h3>
+    <title>Portfolio | Atchara Thabthimhin</title>
+
+    <meta name="description"
+          content="Portfolio ของ อัจฉรา ทับทิมหิน นักเรียนชั้นมัธยมศึกษาปีที่ 6 สาขาวิทยาศาสตร์-คณิตศาสตร์ ผู้สนใจศึกษาต่อวิศวกรรมโยธา">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Prompt:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <style>
+
+        /* =========================
+           RESET
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Prompt", sans-serif;
+            background: #f7faf8;
+            color: #17352b;
+            line-height: 1.8;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        button {
+            font-family: inherit;
+        }
+
+
+        /* =========================
+           VARIABLES
+        ========================= */
+
+        :root {
+            --green-dark: #123c2d;
+            --green: #1f684d;
+            --green-light: #dfeee7;
+            --green-soft: #eef7f2;
+            --white: #ffffff;
+            --text: #17352b;
+            --text-light: #64756e;
+            --border: #dce9e3;
+            --shadow: 0 15px 45px rgba(19, 60, 45, 0.08);
+            --radius: 22px;
+        }
+
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+
+            background: rgba(255,255,255,0.94);
+            backdrop-filter: blur(15px);
+
+            border-bottom: 1px solid rgba(31,104,77,0.08);
+        }
+
+        .nav-container {
+            width: min(1180px, 92%);
+            margin: auto;
+
+            height: 75px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-family: "Kanit", sans-serif;
+            font-size: 25px;
+            font-weight: 600;
+            color: var(--green-dark);
+        }
+
+        .logo span {
+            color: var(--green);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            color: #476057;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--green);
+        }
+
+        .nav-button {
+            background: var(--green-dark);
+            color: white !important;
+
+            padding: 9px 18px;
+            border-radius: 999px;
+        }
+
+        .nav-button:hover {
+            background: var(--green);
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 100vh;
+
+            padding: 150px 5% 80px;
+
+            display: flex;
+            align-items: center;
+
+            background:
+                radial-gradient(circle at 80% 20%, #e1f1e9 0%, transparent 30%),
+                radial-gradient(circle at 10% 90%, #eaf5ef 0%, transparent 30%),
+                #f8fbf9;
+        }
+
+        .hero-container {
+            width: min(1180px, 100%);
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .hero-tag {
+            display: inline-block;
+
+            padding: 7px 16px;
+            margin-bottom: 20px;
+
+            border-radius: 999px;
+
+            background: var(--green-light);
+            color: var(--green-dark);
+
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .hero h1 {
+            font-family: "Kanit", sans-serif;
+
+            font-size: clamp(45px, 7vw, 80px);
+            line-height: 1.05;
+
+            color: var(--green-dark);
+
+            margin-bottom: 18px;
+        }
+
+        .hero h1 span {
+            color: var(--green);
+        }
+
+        .hero-subtitle {
+            font-size: 20px;
+            color: var(--text-light);
+
+            margin-bottom: 25px;
+        }
+
+        .hero-description {
+            max-width: 650px;
+
+            color: #62756d;
+            font-size: 16px;
+
+            margin-bottom: 32px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 13px 23px;
+
+            border-radius: 999px;
+
+            font-size: 14px;
+            font-weight: 500;
+
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: var(--green-dark);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(18,60,45,0.18);
+        }
+
+        .btn-outline {
+            border: 1px solid #b9d1c6;
+            color: var(--green-dark);
+            background: white;
+        }
+
+        .btn-outline:hover {
+            background: var(--green-soft);
+        }
+
+        .hero-card {
+            position: relative;
+
+            min-height: 430px;
+
+            border-radius: 40px;
+
+            background:
+                linear-gradient(145deg, #ffffff, #e8f4ee);
+
+            box-shadow: var(--shadow);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            overflow: hidden;
+        }
+
+        .hero-card::before {
+            content: "";
+
+            position: absolute;
+
+            width: 300px;
+            height: 300px;
+
+            border-radius: 50%;
+
+            background: rgba(31,104,77,0.08);
+
+            top: -100px;
+            right: -80px;
+        }
+
+        .hero-symbol {
+            position: relative;
+            z-index: 2;
+
+            width: 230px;
+            height: 230px;
+
+            border-radius: 50%;
+
+            background: white;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            box-shadow: 0 20px 50px rgba(18,60,45,0.12);
+
+            font-size: 75px;
+        }
+
+        .floating-card {
+            position: absolute;
+
+            background: white;
+
+            padding: 14px 18px;
+
+            border-radius: 15px;
+
+            box-shadow: 0 10px 30px rgba(18,60,45,0.1);
+
+            font-size: 13px;
+
+            z-index: 5;
+        }
+
+        .floating-card.one {
+            left: 25px;
+            top: 55px;
+        }
+
+        .floating-card.two {
+            right: 25px;
+            bottom: 65px;
+        }
+
+
+        /* =========================
+           GENERAL
+        ========================= */
+
+        section {
+            padding: 100px 5%;
+        }
+
+        .container {
+            width: min(1180px, 100%);
+            margin: auto;
+        }
+
+        .section-heading {
+            margin-bottom: 55px;
+        }
+
+        .section-label {
+            color: var(--green);
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+
+            text-transform: uppercase;
+        }
+
+        .section-title {
+            font-family: "Kanit", sans-serif;
+
+            font-size: clamp(34px, 5vw, 50px);
+
+            line-height: 1.2;
+
+            color: var(--green-dark);
+
+            margin-top: 5px;
+        }
+
+        .section-description {
+            max-width: 700px;
+
+            color: var(--text-light);
+
+            margin-top: 12px;
+        }
+
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about {
+            background: white;
+        }
+
+        .about-grid {
+            display: grid;
+
+            grid-template-columns: 0.85fr 1.15fr;
+
+            gap: 55px;
+
+            align-items: start;
+        }
+
+        .profile-box {
+            background: var(--green-soft);
+
+            border-radius: var(--radius);
+
+            padding: 35px;
+        }
+
+        .profile-icon {
+            width: 90px;
+            height: 90px;
+
+            border-radius: 50%;
+
+            background: white;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 35px;
+
+            margin-bottom: 20px;
+        }
+
+        .profile-box h3 {
+            font-family: "Kanit", sans-serif;
+
+            font-size: 25px;
+
+            color: var(--green-dark);
+
+            margin-bottom: 8px;
+        }
+
+        .profile-box p {
+            color: var(--text-light);
+        }
+
+        .info-list {
+            display: grid;
+
+            grid-template-columns: repeat(2,1fr);
+
+            gap: 14px;
+
+            margin-top: 25px;
+        }
+
+        .info-item {
+            background: #f7faf8;
+
+            padding: 15px 18px;
+
+            border-radius: 14px;
+
+            border: 1px solid var(--border);
+        }
+
+        .info-item small {
+            display: block;
+
+            color: #82928c;
+
+            font-size: 11px;
+        }
+
+        .info-item strong {
+            color: var(--green-dark);
+
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           STATS
+        ========================= */
+
+        .stats {
+            padding-top: 0;
+
+            background: white;
+        }
+
+        .stats-grid {
+            display: grid;
+
+            grid-template-columns: repeat(4,1fr);
+
+            gap: 18px;
+        }
+
+        .stat-card {
+            padding: 28px;
+
+            background: var(--green-soft);
+
+            border-radius: 18px;
+
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: "Kanit", sans-serif;
+
+            font-size: 38px;
+
+            color: var(--green-dark);
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: var(--text-light);
+        }
+
+
+        /* =========================
+           SOP
+        ========================= */
+
+        .sop {
+            background: #f7faf8;
+        }
+
+        .sop-box {
+            background: white;
+
+            border-radius: var(--radius);
+
+            padding: 50px;
+
+            box-shadow: var(--shadow);
+
+            border-left: 5px solid var(--green);
+        }
+
+        .sop-box p {
+            color: #53665e;
+
+            font-size: 16px;
+
+            margin-bottom: 18px;
+        }
+
+        .quote {
+            margin-top: 35px;
+
+            padding: 25px;
+
+            border-radius: 15px;
+
+            background: var(--green-soft);
+
+            color: var(--green-dark);
+
+            font-weight: 500;
+
+            text-align: center;
+        }
+
+
+        /* =========================
+           EDUCATION
+        ========================= */
+
+        .education {
+            background: white;
+        }
+
+        .education-card {
+            display: grid;
+
+            grid-template-columns: 130px 1fr;
+
+            gap: 30px;
+
+            padding: 35px;
+
+            border: 1px solid var(--border);
+
+            border-radius: var(--radius);
+
+            background: #fbfdfc;
+        }
+
+        .edu-number {
+            width: 100px;
+            height: 100px;
+
+            border-radius: 22px;
+
+            background: var(--green-dark);
+
+            color: white;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-family: "Kanit", sans-serif;
+
+            font-size: 28px;
+        }
+
+        .education-card h3 {
+            font-family: "Kanit", sans-serif;
+
+            font-size: 26px;
+
+            color: var(--green-dark);
+
+            margin-bottom: 7px;
+        }
+
+        .education-card p {
+            color: var(--text-light);
+        }
+
+        .gpa {
+            display: inline-block;
+
+            margin-top: 15px;
+
+            background: var(--green-light);
+
+            color: var(--green-dark);
+
+            padding: 8px 15px;
+
+            border-radius: 999px;
+
+            font-size: 13px;
+
+            font-weight: 600;
+        }
+
+
+        /* =========================
+           EXPERIENCE
+        ========================= */
+
+        .experience {
+            background: #f7faf8;
+        }
+
+        .timeline {
+            position: relative;
+
+            max-width: 900px;
+
+            margin: auto;
+        }
+
+        .timeline::before {
+            content: "";
+
+            position: absolute;
+
+            left: 18px;
+            top: 0;
+            bottom: 0;
+
+            width: 2px;
+
+            background: #cfe2d9;
+        }
+
+        .timeline-item {
+            position: relative;
+
+            padding-left: 60px;
+
+            margin-bottom: 35px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+
+            left: 8px;
+            top: 5px;
+
+            width: 22px;
+            height: 22px;
+
+            border-radius: 50%;
+
+            background: var(--green);
+
+            border: 5px solid #e1efe9;
+        }
+
+        .timeline-card {
+            background: white;
+
+            border-radius: 18px;
+
+            padding: 28px;
+
+            box-shadow: 0 8px 25px rgba(18,60,45,0.05);
+        }
+
+        .timeline-card h3 {
+            font-family: "Kanit", sans-serif;
+
+            font-size: 22px;
+
+            color: var(--green-dark);
+
+            margin-bottom: 8px;
+        }
+
+        .timeline-card p {
+            color: var(--text-light);
+
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           SKILLS
+        ========================= */
+
+        .skills {
+            background: white;
+        }
+
+        .skills-grid {
+            display: grid;
+
+            grid-template-columns: repeat(5,1fr);
+
+            gap: 15px;
+        }
+
+        .skill {
+            padding: 22px 15px;
+
+            text-align: center;
+
+            border: 1px solid var(--border);
+
+            border-radius: 18px;
+
+            background: #fbfdfc;
+
+            transition: 0.3s;
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
+
+            border-color: #b8d4c7;
+
+            box-shadow: var(--shadow);
+        }
+
+        .skill-icon {
+            font-size: 28px;
+
+            margin-bottom: 8px;
+        }
+
+        .skill strong {
+            display: block;
+
+            color: var(--green-dark);
+
+            font-size: 14px;
+        }
+
+        .skill span {
+            font-size: 11px;
+
+            color: #84928d;
+        }
+
+
+        /* =========================
+           PORTFOLIO PDF
+        ========================= */
+
+        .portfolio {
+            background: var(--green-dark);
+
+            color: white;
+        }
+
+        .portfolio .section-title {
+            color: white;
+        }
+
+        .portfolio .section-label {
+            color: #a9d4c1;
+        }
+
+        .portfolio .section-description {
+            color: #bdd0c8;
+        }
+
+        .pdf-container {
+            background: #0c2d22;
+
+            padding: 18px;
+
+            border-radius: 25px;
+
+            box-shadow: 0 25px 70px rgba(0,0,0,0.2);
+
+            margin-top: 35px;
+        }
+
+        .pdf-container iframe {
+            width: 100%;
+
+            height: 780px;
+
+            border: none;
+
+            border-radius: 15px;
+
+            background: white;
+        }
+
+        .pdf-buttons {
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 14px;
+
+            margin-top: 25px;
+        }
+
+        .btn-white {
+            background: white;
+
+            color: var(--green-dark);
+        }
+
+        .btn-white:hover {
+            transform: translateY(-3px);
+
+            background: #eef8f3;
+        }
+
+        .btn-canva {
+            background: #cde9dc;
+
+            color: var(--green-dark);
+        }
+
+        .btn-canva:hover {
+            background: white;
+
+            transform: translateY(-3px);
+        }
+
+        .pdf-note {
+            text-align: center;
+
+            color: #a9bdb4;
+
+            font-size: 12px;
+
+            margin-top: 15px;
+        }
+
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact {
+            background: white;
+        }
+
+        .contact-grid {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 25px;
+        }
+
+        .contact-card {
+            padding: 30px;
+
+            border-radius: 20px;
+
+            background: #f7faf8;
+
+            border: 1px solid var(--border);
+        }
+
+        .contact-card h3 {
+            font-family: "Kanit", sans-serif;
+
+            color: var(--green-dark);
+
+            font-size: 22px;
+
+            margin-bottom: 12px;
+        }
+
+        .contact-card p {
+            color: var(--text-light);
+
+            font-size: 14px;
+        }
+
+        .contact-link {
+            color: var(--green);
+
+            font-weight: 500;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #0d2c22;
+
+            color: #b7c8c1;
+
+            padding: 35px 5%;
+
+            text-align: center;
+
+            font-size: 13px;
+        }
+
+        footer strong {
+            color: white;
+        }
+
+
+        /* =========================
+           BACK TO TOP
+        ========================= */
+
+        #topButton {
+            position: fixed;
+
+            right: 25px;
+            bottom: 25px;
+
+            width: 45px;
+            height: 45px;
+
+            border: none;
+
+            border-radius: 50%;
+
+            background: var(--green-dark);
+
+            color: white;
+
+            font-size: 18px;
+
+            cursor: pointer;
+
+            opacity: 0;
+
+            visibility: hidden;
+
+            transition: 0.3s;
+
+            z-index: 1000;
+        }
+
+        #topButton.show {
+            opacity: 1;
+
+            visibility: visible;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 950px) {
+
+            .nav-links {
+                gap: 15px;
+            }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+
+            }
+
+            .hero-card {
+                min-height: 350px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            .skills-grid {
+                grid-template-columns: repeat(3,1fr);
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 700px) {
+
+            .navbar {
+                position: absolute;
+            }
+
+            .nav-container {
+                height: auto;
+
+                padding: 18px 0;
+
+                flex-direction: column;
+
+                gap: 15px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+
+                justify-content: center;
+
+                gap: 10px 15px;
+            }
+
+            .nav-links a {
+                font-size: 12px;
+            }
+
+            .hero {
+                padding-top: 170px;
+            }
+
+            section {
+                padding: 70px 5%;
+            }
+
+            .hero h1 {
+                font-size: 50px;
+            }
+
+            .hero-subtitle {
+                font-size: 17px;
+            }
+
+            .sop-box {
+                padding: 30px 22px;
+            }
+
+            .education-card {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-grid {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            .info-list {
+                grid-template-columns: 1fr;
+            }
+
+            .pdf-container {
+                padding: 8px;
+            }
+
+            .pdf-container iframe {
+                height: 600px;
+            }
+
+            .timeline-item {
+                padding-left: 48px;
+            }
+
+        }
+
+
+        @media (max-width: 430px) {
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .pdf-container iframe {
+                height: 500px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <a href="#home" class="logo">
+                AT<span>.</span>
+            </a>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#about">Profile</a>
+                </li>
+
+                <li>
+                    <a href="#sop">SOP</a>
+                </li>
+
+                <li>
+                    <a href="#education">Education</a>
+                </li>
+
+                <li>
+                    <a href="#experience">Experience</a>
+                </li>
+
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="nav-button">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================
+         HERO
+    ========================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-container">
+
+            <div>
+
+                <div class="hero-tag">
+                    PORTFOLIO • CIVIL ENGINEERING
+                </div>
+
+                <h1>
+                    Atchara<br>
+                    <span>Thabthimhin</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    นักเรียนชั้นมัธยมศึกษาปีที่ 6
+                    | วิทยาศาสตร์–คณิตศาสตร์
+                </p>
+
+                <p class="hero-description">
+                    ผู้สนใจศึกษาต่อด้านวิศวกรรมศาสตร์
+                    สาขาวิศวกรรมโยธา
+                    มีความสนใจด้านโครงสร้าง วัสดุก่อสร้าง
+                    การออกแบบ และกระบวนการก่อสร้าง
+                    พร้อมเรียนรู้และพัฒนาทักษะจากทั้งภาคทฤษฎี
+                    และประสบการณ์จริง
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#portfolio"
+                       class="btn btn-primary">
+                        ดู Portfolio ฉบับเต็ม
+                    </a>
+
+                    <a href="https://canva.link/news71fwrw6kxlg"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn btn-outline">
+                        ผลงานเพิ่มเติม
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-card">
+
+                <div class="floating-card one">
+                    🏗️ Civil Engineering
+                </div>
+
+                <div class="hero-symbol">
+                    🏗️
+                </div>
+
+                <div class="floating-card two">
+                    📐 Design • Structure • Construction
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         ABOUT
+    ========================= -->
+
+    <section class="about" id="about">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    About Me
+                </div>
+
+                <h2 class="section-title">
+                    Profile
+                </h2>
+
+                <p class="section-description">
+                    ทำความรู้จักตัวตน ความสนใจ
+                    และเป้าหมายในการศึกษาต่อของฉัน
+                </p>
+
+            </div>
+
+
+            <div class="about-grid">
+
+                <div class="profile-box">
+
+                    <div class="profile-icon">
+                        👩🏻‍💻
+                    </div>
+
+                    <h3>
+                        อัจฉรา ทับทิมหิน
+                    </h3>
+
+                    <p>
+                        นักเรียนชั้น ม.6
+                        แผนการเรียนวิทยาศาสตร์–คณิตศาสตร์
+                        ผู้มีเป้าหมายศึกษาต่อ
+                        คณะวิศวกรรมศาสตร์
+                        สาขาวิศวกรรมโยธา
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <p style="color:#64756e;">
+                        ดิฉันเป็นคนที่มีความรับผิดชอบ
+                        ตรงต่อเวลา และตั้งใจทำงานที่ได้รับมอบหมาย
+                        ให้ดีที่สุด ชอบเรียนรู้สิ่งใหม่ ๆ
+                        และพร้อมพัฒนาตัวเองอยู่เสมอ
+                        สามารถทำงานร่วมกับผู้อื่นได้ดี
+                        และเปิดรับความคิดเห็นเพื่อนำมาปรับปรุงตัวเอง
+                    </p>
+
+
+                    <div class="info-list">
+
+                        <div class="info-item">
+                            <small>Nickname</small>
+                            <strong>ฟางข้าว</strong>
+                        </div>
+
+                        <div class="info-item">
+                            <small>Education</small>
+                            <strong>ม.6</strong>
+                        </div>
+
+                        <div class="info-item">
+                            <small>Study Plan</small>
+                            <strong>วิทยาศาสตร์–คณิตศาสตร์</strong>
+                        </div>
+
+                        <div class="info-item">
+                            <small>Interested Faculty</small>
+                            <strong>วิศวกรรมศาสตร์</strong>
+                        </div>
+
+                        <div class="info-item">
+                            <small>Major</small>
+                            <strong>วิศวกรรมโยธา</strong>
+                        </div>
+
+                        <div class="info-item">
+                            <small>Hobbies</small>
+                            <strong>ฟังเพลง • ดูหนัง</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         STATS
+    ========================= -->
+
+    <section class="stats">
+
+        <div class="container">
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <div class="stat-number">2.78</div>
+                    <div class="stat-label">
+                        GPA 4 ภาคเรียน
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">9</div>
+                    <div class="stat-label">
+                        หน้า Portfolio ฉบับจริง
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">
+                        Engineering Activities
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">M.6</div>
+                    <div class="stat-label">
+                        Current Education
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         SOP
+    ========================= -->
+
+    <section class="sop" id="sop">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    Statement of Purpose
+                </div>
+
+                <h2 class="section-title">
+                    Why Civil Engineering?
+                </h2>
+
+            </div>
+
+
+            <div class="sop-box">
+
+                <p>
+                    ความสนใจในวิศวกรรมโยธาของดิฉันเริ่มต้นจากครอบครัว
+                    ที่ประกอบอาชีพรับเหมาก่อสร้าง ทำให้มีโอกาสได้เห็น
+                    การทำงานจริงในหน้างานและสัมผัสกระบวนการก่อสร้าง
+                    มาตั้งแต่เด็ก สิ่งที่ทำให้ดิฉันสนใจคือคำถามว่า
+                    อาคาร ถนน หรือโครงสร้างต่าง ๆ ถูกออกแบบและคำนวณอย่างไร
+                    จึงสามารถรับน้ำหนักและใช้งานได้อย่างปลอดภัย
+                </p>
+
+                <p>
+                    เมื่อเข้าสู่ระดับมัธยมศึกษาตอนปลาย ดิฉันจึงเลือกเรียน
+                    สายที่ช่วยเตรียมความพร้อมด้านคณิตศาสตร์ วิทยาศาสตร์
+                    การคิดวิเคราะห์ และการแก้ปัญหา ซึ่งเป็นพื้นฐานสำคัญ
+                    ของวิศวกรรม พร้อมค้นหาประสบการณ์นอกห้องเรียน
+                    ผ่านค่ายและ Workshop ด้านวิศวกรรม
+                </p>
+
+                <p>
+                    การเข้าร่วม RMUTP Civil Camp ทำให้ได้เรียนรู้
+                    กระบวนการก่อสร้าง การสำรวจ การทดสอบวัสดุ
+                    และบทบาทของวิศวกรโยธา รวมถึงการลงมือผสมปูนซีเมนต์
+                    หล่อแบบคอนกรีต และฝึกใช้กล้องสำรวจเบื้องต้น
+                </p>
+
+                <p>
+                    นอกจากนี้ ดิฉันได้จัดทำโครงงานคอนกรีตผสมวัสดุทดแทน
+                    ได้แก่ ใยมะพร้าว เถ้าแกลบ และฝุ่นหิน
+                    เพื่อศึกษาแนวทางพัฒนาวัสดุก่อสร้าง
+                    ที่เป็นมิตรต่อสิ่งแวดล้อม
+                    ทำให้ได้ฝึกวางแผนการทดลอง เก็บข้อมูล
+                    วิเคราะห์ผล และสรุปผลอย่างเป็นระบบ
+                </p>
+
+                <p>
+                    จากประสบการณ์ทั้งหมด ดิฉันจึงมั่นใจว่า
+                    วิศวกรรมโยธาเป็นสาขาที่สอดคล้องกับความสนใจ
+                    และเป้าหมายของตนเอง
+                    ในอนาคตตั้งใจประกอบอาชีพวิศวกรโยธา
+                    และนำความรู้ด้านการออกแบบ การควบคุมงาน
+                    และการบริหารโครงการกลับมาต่อยอดธุรกิจรับเหมาก่อสร้าง
+                    ของครอบครัวให้มีมาตรฐาน มีคุณภาพ
+                    และปลอดภัยยิ่งขึ้น
+                </p>
+
+                <div class="quote">
+                    “Every great structure begins with a strong foundation.”
+                    <br>
+                    โครงสร้างที่ยิ่งใหญ่เริ่มต้นจากรากฐานที่แข็งแรง
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         EDUCATION
+    ========================= -->
+
+    <section class="education" id="education">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    Academic Record
+                </div>
+
+                <h2 class="section-title">
+                    Education
+                </h2>
+
+                <p class="section-description">
+                    ประวัติการศึกษาและผลการเรียน
+                </p>
+
+            </div>
+
+
+            <div class="education-card">
+
+                <div class="edu-number">
+                    01
+                </div>
+
+                <div>
+
+                    <h3>
+                        โรงเรียนกระทุ่มแบน
+                        “วิเศษสมุทคุณ”
+                    </h3>
+
+                    <p>
+                        ระดับชั้นมัธยมศึกษาปีที่ 6
+                        แผนการเรียนวิทยาศาสตร์–คณิตศาสตร์
+                    </p>
+
+                    <p style="margin-top:10px;">
+                        มุ่งเน้นการเรียนรู้ด้านคณิตศาสตร์
+                        วิทยาศาสตร์ การคิดวิเคราะห์
+                        และการแก้ปัญหา
+                        เพื่อเตรียมความพร้อมสำหรับการศึกษาต่อ
+                        ด้านวิศวกรรมศาสตร์
+                    </p>
+
+                    <span class="gpa">
+                        GPA 4 ภาคเรียน : 2.78
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         EXPERIENCE
+    ========================= -->
+
+    <section class="experience" id="experience">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    Engineering Experience
+                </div>
+
+                <h2 class="section-title">
+                    Camps & Workshops
+                </h2>
+
+                <p class="section-description">
+                    ประสบการณ์จากค่ายและกิจกรรมด้านวิศวกรรม
+                </p>
+
+            </div>
+
+
+            <div class="timeline">
+
+
+                <!-- ITEM 1 -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-card">
+
+                        <h3>
+                            RMUTP Civil Camp
+                        </h3>
+
+                        <p>
+                            เข้าร่วมค่ายวิศวกรรมโยธา
+                            เรียนรู้พื้นฐานด้านวัสดุ อุปกรณ์
+                            และทฤษฎีงานก่อสร้าง
+                            ได้ลงมือผสมปูนซีเมนต์
+                            หล่อแบบคอนกรีต แกะแบบ
+                            ทดสอบตัวอย่างคอนกรีต
+                            และฝึกการใช้กล้องสำรวจเบื้องต้น
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ITEM 2 -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-card">
+
+                        <h3>
+                            ค่ายอัจฉริยภาพวิศวกรรมไฟฟ้า
+                            มหาวิทยาลัยศิลปากร
+                        </h3>
+
+                        <p>
+                            เรียนรู้พื้นฐานด้านวิศวกรรมไฟฟ้า
+                            ผ่านการต่อวงจรไฟฟ้า
+                            การใช้อุปกรณ์ไฟฟ้าเบื้องต้น
+                            และการเขียน Coding
+                            เพื่อควบคุมระบบตามโจทย์
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ITEM 3 -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-card">
+
+                        <h3>
+                            K-Engineering World Tour
+                            and Workshop 2025
+                        </h3>
+
+                        <p>
+                            เข้าร่วม Workshop
+                            ด้านวิศวกรรมโยธาและวิศวกรรมวัดคุม
+                            เรียนรู้เกี่ยวกับวัสดุก่อสร้าง
+                            โครงสร้างอาคาร การควบคุมคุณภาพงานก่อสร้าง
+                            เซนเซอร์ และระบบควบคุม
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ITEM 4 -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-card">
+
+                        <h3>
+                            FIET LAND
+                        </h3>
+
+                        <p>
+                            เข้าฐานวิศวกรรมโยธาและวิศวกรรมเคมี
+                            เรียนรู้โครงสร้างอาคาร
+                            การใช้เซนเซอร์ตรวจวัดความสั่นสะเทือน
+                            และการวางแผนก่อสร้างผ่านกิจกรรมจำลอง
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ITEM 5 -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-card">
+
+                        <h3>
+                            Engineering Sparks
+                        </h3>
+
+                        <p>
+                            เข้าร่วม Workshop
+                            ของคณะวิศวกรรมศาสตร์
+                            มหาวิทยาลัยเกษตรศาสตร์
+                            ในสาขาวิศวกรรมทรัพยากรน้ำ
+                            และวิศวกรรมโยธา
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ITEM 6 -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-card">
+
+                        <h3>
+                            K-Engineering World Tour
+                            and Competency Challenge 2026
+                        </h3>
+
+                        <p>
+                            เข้าร่วม Workshop
+                            “การทดสอบวัสดุวิศวกรรมโยธา [Non-EE]”
+                            เรียนรู้เกี่ยวกับวัสดุในงานโยธา
+                            และกระบวนการทดสอบวัสดุเบื้องต้น
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ITEM 7 -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-card">
+
+                        <h3>
+                            PIM Young Creative Program รุ่นที่ 4
+                        </h3>
+
+                        <p>
+                            เข้าร่วมกิจกรรม Open House
+                            เพื่อเปิดประสบการณ์และเรียนรู้แนวทาง
+                            การศึกษาต่อระดับมหาวิทยาลัย
+                            พร้อมฝึกทักษะการคิดวิเคราะห์
+                            และการทำงานผ่านกิจกรรมต่าง ๆ
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ITEM 8 -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-card">
+
+                        <h3>
+                            เทคโนโลยีอากาศยานไร้คนขับ
+                            เพื่องานอนุรักษ์สิ่งแวดล้อม
+                        </h3>
+
+                        <p>
+                            อบรมเชิงปฏิบัติการเป็นเวลา 7 ชั่วโมง
+                            เรียนรู้การประยุกต์ใช้โดรน
+                            ในการสำรวจและเก็บข้อมูล
+                            เพื่อการอนุรักษ์สิ่งแวดล้อม
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         SKILLS
+    ========================= -->
+
+    <section class="skills" id="skills">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    Skills
+                </div>
+
+                <h2 class="section-title">
+                    My Skills
+                </h2>
+
+                <p class="section-description">
+                    ทักษะที่พัฒนาจากการเรียน กิจกรรม
+                    และการทำโครงงาน
+                </p>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+                <div class="skill">
+                    <div class="skill-icon">🎨</div>
+                    <strong>Canva</strong>
+                    <span>Design</span>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-icon">📄</div>
+                    <strong>Microsoft Word</strong>
+                    <span>Document</span>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-icon">📊</div>
+                    <strong>PowerPoint</strong>
+                    <span>Presentation</span>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-icon">📈</div>
+                    <strong>Excel</strong>
+                    <span>Spreadsheet</span>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-icon">🐍</div>
+                    <strong>Python</strong>
+                    <span>Basic</span>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-icon">🤖</div>
+                    <strong>KidBright</strong>
+                    <span>Basic Coding</span>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-icon">🧠</div>
+                    <strong>Analytical Thinking</strong>
+                    <span>Thinking</span>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-icon">🛠️</div>
+                    <strong>Problem Solving</strong>
+                    <span>Problem Solving</span>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-icon">🤝</div>
+                    <strong>Teamwork</strong>
+                    <span>Collaboration</span>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-icon">💬</div>
+                    <strong>Communication</strong>
+                    <span>Communication</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         REAL PORTFOLIO
+    ========================= -->
+
+    <section class="portfolio" id="portfolio">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    Real Portfolio
+                </div>
+
+                <h2 class="section-title">
+                    Portfolio ฉบับเต็ม
+                </h2>
+
+                <p class="section-description">
+                    สามารถเปิดอ่าน Portfolio ฉบับจริง
+                    จำนวน 9 หน้าได้โดยตรงจากเว็บไซต์
+                </p>
+
+            </div>
+
+
+            <!-- PDF -->
+
+            <div class="pdf-container">
+
+                <iframe
+                    src="portfolio-real.pdf#toolbar=1&navpanes=0&view=FitH"
+                    title="Portfolio ฉบับเต็ม">
+                </iframe>
+
+            </div>
+
+
+            <!-- BUTTONS -->
+
+            <div class="pdf-buttons">
+
+                <a
+                    href="portfolio-real.pdf"
+                    target="_blank"
+                    class="btn btn-white">
+
+                    📖 เปิด Portfolio ฉบับเต็ม
+
+                </a>
+
+
+                <a
+                    href="portfolio-real.pdf"
+                    download="Atchara_Portfolio.pdf"
+                    class="btn btn-white">
+
+                    ⬇️ เปิดไฟล์ PDF
+
+                </a>
+
+
+                <a
+                    href="https://canva.link/news71fwrw6kxlg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-canva">
+
+                    ✨ ผลงานเพิ่มเติมจาก Canva
+
+                </a>
+
+            </div>
+
+
+            <p class="pdf-note">
+                หาก PDF ไม่แสดงบนอุปกรณ์บางรุ่น
+                ให้กด “เปิด Portfolio ฉบับเต็ม”
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         VOLUNTEER
+    ========================= -->
+
+    <section class="experience">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    Volunteer Activities
+                </div>
+
+                <h2 class="section-title">
+                    Volunteer & Activities
+                </h2>
+
+            </div>
+
+
+            <div class="timeline">
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-card">
+
+                        <h3>
+                            ตัวแทนนักเรียนเข้าร่วมพิธีเคารพพระบรมศพ
+                        </h3>
+
+                        <p>
+                            ได้รับคัดเลือกให้เป็นตัวแทนนักเรียน
+                            เข้าร่วมพิธีสำคัญ
+                            โดยปฏิบัติหน้าที่ด้วยความสำรวม
+                            และเหมาะสม ฝึกความรับผิดชอบ
+                            ระเบียบวินัย การตรงต่อเวลา
+                            และการทำหน้าที่ร่วมกับผู้อื่น
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-card">
+
+                        <h3>
+                            อาสาพ้นภัย (พิบัติ)
+                        </h3>
+
+                        <p>
+                            เรียนรู้เกี่ยวกับการเตรียมความพร้อม
+                            และแนวทางการปฏิบัติตนเมื่อเกิดภัยพิบัติ
+                            ฝึกการทำงานเป็นทีม
+                            ความรอบคอบ และความรับผิดชอบ
+                            รวมถึงตระหนักถึงความสำคัญ
+                            ของการช่วยเหลือผู้อื่น
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-card">
+
+                        <h3>
+                            ทอดผ้าป่าเพื่อการศึกษา
+                        </h3>
+
+                        <p>
+                            มีส่วนร่วมในการเตรียมงาน
+                            และดำเนินกิจกรรมร่วมกับเพื่อน ๆ
+                            และบุคลากรภายในโรงเรียน
+                            เพื่อสนับสนุนทรัพยากรทางการศึกษา
+                            ได้ฝึกความรับผิดชอบ
+                            การทำงานร่วมกับผู้อื่น
+                            และการเสียสละเพื่อส่วนรวม
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CONTACT
+    ========================= -->
+
+    <section class="contact" id="contact">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    Contact
+                </div>
+
+                <h2 class="section-title">
+                    Get In Touch
+                </h2>
+
+                <p class="section-description">
+                    ขอบคุณที่เข้าชม Portfolio ของฉัน
+                </p>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+                <div class="contact-card">
+
+                    <h3>
+                        👩🏻‍🎓 Personal
+                    </h3>
+
+                    <p>
+                        <strong>Atchara Thabthimhin</strong>
+                    </p>
+
+                    <p>
+                        นักเรียนชั้นมัธยมศึกษาปีที่ 6
+                    </p>
+
+                    <p>
+                        สนใจศึกษาต่อวิศวกรรมโยธา
+                    </p>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <h3>
+                        📚 Portfolio
+                    </h3>
+
+                    <p>
+                        สามารถดู Portfolio ฉบับเต็ม
+                        และผลงานเพิ่มเติมได้จากลิงก์ด้านล่าง
+                    </p>
+
+                    <p style="margin-top:15px;">
+
+                        <a
+                            href="#portfolio"
+                            class="contact-link">
+
+                            ดู Portfolio ฉบับเต็ม →
+
+                        </a>
+
+                    </p>
+
+                    <p>
+
+                        <a
+                            href="https://canva.link/news71fwrw6kxlg"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact-link">
+
+                            ดูผลงานเพิ่มเติมบน Canva →
+
+                        </a>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
         <p>
-          เข้าร่วม Workshop ของสาขาวิศวกรรมโยธาและวิศวกรรมวัดคุม
-          โดยด้านโยธาได้เรียนรู้วัสดุก่อสร้าง เช่น อิฐมวลเบา โครงสร้างอาคาร
-          และการควบคุมคุณภาพงานก่อสร้าง ส่วนด้านวิศวกรรมวัดคุมได้เรียนรู้
-          การทำงานของเซนเซอร์ เครื่องมือวัด และระบบควบคุมในงานอุตสาหกรรม
+            © 2026
+            <strong>Atchara Thabthimhin</strong>
+            · Portfolio
         </p>
-      </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <h3>Engineering Sparks — มหาวิทยาลัยเกษตรศาสตร์</h3>
         <p>
-          เข้าร่วม Workshop ของสาขาวิศวกรรมทรัพยากรน้ำและวิศวกรรมโยธา
-          ได้รู้จักหลักสูตร การเรียนการสอน และการทำงานของวิศวกรในแต่ละสาขา
-          รวมถึงได้รับคำแนะนำจากอาจารย์และรุ่นพี่เกี่ยวกับการเตรียมตัวเข้าศึกษาต่อ
+            Civil Engineering Applicant
         </p>
-      </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <h3>K-Engineering World Tour and Competency Challenge 2026 — สจล.</h3>
-        <p>
-          เข้าร่วม Workshop “การทดสอบวัสดุวิศวกรรมโยธา [Non-EE]”
-          เรียนรู้เกี่ยวกับวัสดุที่ใช้ในงานวิศวกรรมโยธาและกระบวนการทดสอบวัสดุเบื้องต้น
-          ทำให้เข้าใจว่าคุณสมบัติและคุณภาพของวัสดุมีผลต่อความแข็งแรงและความปลอดภัยของโครงสร้าง
-        </p>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <h3>PIM Young Creative Program รุ่นที่ 4 — Open House</h3>
-        <p>
-          เปิดประสบการณ์เกี่ยวกับการศึกษาต่อระดับมหาวิทยาลัย เรียนรู้แนวทาง
-          การเรียนการสอนและการทำงานในสายวิศวกรรม พร้อมฝึกทักษะการคิดวิเคราะห์
-          ผ่านกิจกรรมต่าง ๆ เพื่อนำมาประกอบการตัดสินใจเลือกศึกษาต่อ
-        </p>
-      </div>
-
-      <div class="timeline-item" style="margin-bottom:0">
-        <div class="timeline-dot"></div>
-        <h3>อบรมเชิงปฏิบัติการ “เทคโนโลยีอากาศยานไร้คนขับเพื่องานอนุรักษ์สิ่งแวดล้อม”</h3>
-        <p>
-          อบรม 7 ชั่วโมง เรียนรู้การประยุกต์ใช้เทคโนโลยีอากาศยานไร้คนขับหรือโดรน
-          เพื่อการสำรวจและเก็บข้อมูลด้านการอนุรักษ์สิ่งแวดล้อม
-          ช่วยพัฒนาทักษะการเรียนรู้เทคโนโลยีและการประยุกต์ใช้เครื่องมือเพื่อแก้ปัญหา
-        </p>
-      </div>
-
-    </div>
-  </div>
-</div>
-</section>
-
-<section class="section">
-<div class="container">
-  <div class="section-title reveal">
-    <div class="mini">07 • Volunteer Activities</div>
-    <h2>กิจกรรมจิตอาสาและความรับผิดชอบ</h2>
-    <p>ประสบการณ์ที่ช่วยพัฒนาความมีวินัย การทำงานร่วมกับผู้อื่น และการทำประโยชน์เพื่อส่วนรวม</p>
-  </div>
-
-  <div class="grid-3">
-    <div class="activity reveal">
-      <div class="icon">🎓</div>
-      <h3>ตัวแทนนักเรียนเข้าร่วมพิธีเคารพพระบรมศพ</h3>
-      <p>
-        ได้รับคัดเลือกให้เป็นตัวแทนนักเรียนเข้าร่วมพิธีเคารพพระบรมศพสมเด็จพระบรมราชชนนีพันปีหลวง
-        ปฏิบัติหน้าที่ด้วยความสำรวมและเหมาะสม เรียนรู้ความรับผิดชอบ การตรงต่อเวลา
-        การปฏิบัติตามกฎระเบียบ และการวางตนอย่างเหมาะสมเมื่อได้รับมอบหมายให้เป็นตัวแทนของโรงเรียน
-      </p>
-    </div>
-
-    <div class="activity reveal">
-      <div class="icon">❤️</div>
-      <h3>อาสาพ้นภัย (พิบัติ)</h3>
-      <p>
-        เรียนรู้การเตรียมความพร้อมและแนวทางการปฏิบัติตนเมื่อเกิดภัยพิบัติ
-        รวมถึงการช่วยเหลือและทำงานร่วมกับผู้อื่น ฝึกการทำงานอย่างเป็นระบบ
-        ความรอบคอบ ความรับผิดชอบ และจิตอาสา
-      </p>
-    </div>
-
-    <div class="activity reveal">
-      <div class="icon">🤝</div>
-      <h3>ทอดผ้าป่าเพื่อการศึกษา</h3>
-      <p>
-        มีส่วนร่วมในการเตรียมงานและดำเนินกิจกรรมร่วมกับเพื่อนและบุคลากรในโรงเรียน
-        เพื่อสนับสนุนการจัดหาและพัฒนาทรัพยากรสำหรับการศึกษา
-        ฝึกความรับผิดชอบ การทำงานร่วมกับผู้อื่น การแบ่งปัน และการเสียสละเพื่อส่วนรวม
-      </p>
-    </div>
-  </div>
-</div>
-</section>
+    </footer>
 
 
-<section class="section">
-<div class="container">
-  <div class="section-title reveal">
-    <div class="mini">08 • Learning Journey</div>
-    <h2>สิ่งที่ประสบการณ์เหล่านี้สอนฉัน</h2>
-  </div>
 
-  <div class="grid-3">
-    <div class="stat reveal"><div class="number">01</div><span><b>ลงมือทำ</b><br>เรียนรู้จากการปฏิบัติจริง ไม่จำกัดอยู่แค่ในห้องเรียน</span></div>
-    <div class="stat reveal"><div class="number">02</div><span><b>คิดและแก้ปัญหา</b><br>ฝึกวิเคราะห์ ทดลอง ปรับปรุง และเรียนรู้จากข้อผิดพลาด</span></div>
-    <div class="stat reveal"><div class="number">03</div><span><b>รับผิดชอบ</b><br>ตระหนักถึงคุณภาพ ความปลอดภัย และการทำงานร่วมกับผู้อื่น</span></div>
-  </div>
+    <!-- =========================
+         BACK TO TOP
+    ========================= -->
 
-  <div class="card reveal" style="margin-top:22px">
-    <p style="margin:0">
-      จากประสบการณ์ทั้งหมด ดิฉันเห็นชัดเจนมากขึ้นว่าวิศวกรรมโยธาไม่ได้อาศัยเพียงการคำนวณ
-      แต่ต้องมีความละเอียดรอบคอบ ความรับผิดชอบ การทำงานเป็นทีม การทดลอง และการแก้ปัญหา
-      ประสบการณ์จากหน้างานครอบครัว ค่ายวิศวกรรม โครงงาน และกิจกรรมต่าง ๆ
-      จึงเป็นพื้นฐานสำคัญที่ทำให้มั่นใจว่าวิศวกรรมโยธาเป็นสาขาที่สอดคล้องกับความสนใจและเป้าหมายของตนเอง
-    </p>
-  </div>
-</div>
-</section>
+    <button id="topButton" aria-label="กลับด้านบน">
+        ↑
+    </button>
 
-<section class="section" id="portfolio" style="background:#f7faf8">
-<div class="container">
-  <div class="section-title reveal">
-    <div class="mini">09 • Full Portfolio</div>
-    <h2>แฟ้มสะสมผลงานฉบับเต็ม</h2>
-    <p>เปิดดู Portfolio PDF ได้จากส่วนด้านล่าง</p>
-  </div>
 
-  <div class="pdf-box reveal">
-    <div class="pdf-actions">
-      <a class="btn btn-primary" href="Elegant Minimalist A4 Stationery Paper Document (10).pdf" target="_blank" rel="noopener">
-        📄 เปิด PDF ฉบับเต็ม
-      </a>
-      <a class="btn" style="background:var(--green);color:#fff"
-         href="Elegant Minimalist A4 Stationery Paper Document (10).pdf"
-         download>
-        ⬇️ ดาวน์โหลด PDF
-      </a>
-    </div>
 
-    <iframe
-      class="pdf-frame"
-      src="portfolio_atchara.pdf"
-      title="Portfolio PDF Preview">
-    </iframe>
+    <!-- =========================
+         JAVASCRIPT
+    ========================= -->
 
-    <div class="note">
-      💡 <b>หมายเหตุ:</b> ไฟล์ PDF ต้องอยู่ในโฟลเดอร์เดียวกับไฟล์ HTML
-      และต้องใช้ชื่อไฟล์ตรงกับชื่อที่ระบุในโค้ด จึงจะแสดงตัวอย่าง PDF ได้
-    </div>
-  </div>
-</div>
-</section>
+    <script>
 
-<section class="section" id="contact">
-<div class="container">
-  <div class="section-title reveal">
-    <div class="mini">10 • Contact</div>
-    <h2>ช่องทางการติดต่อ</h2>
-  </div>
+        /* =========================
+           BACK TO TOP
+        ========================= */
 
-  <div class="grid-2">
-    <div class="card reveal">
-      <h3 style="color:var(--green)">Contact Information</h3>
-      <div class="contact-grid">
-        <div class="contact-item">📞 <b>โทร:</b> 065-383-3404</div>
-        <div class="contact-item">✉️ <b>อีเมล:</b> 164215@wsk.ac.th</div>
-        <div class="contact-item">💬 <b>LINE:</b> 065-383-3404</div>
-        <div class="contact-item">📘 <b>Facebook:</b> Atchara Thabthimhin</div>
-        <div class="contact-item">📸 <b>Instagram:</b> Fangkhaw.kk</div>
-      </div>
-    </div>
+        const topButton =
+            document.getElementById("topButton");
 
-    <div class="card reveal">
-      <h3 style="color:var(--green)">Final Message</h3>
-      <p>
-        ขอบคุณที่เปิดชมแฟ้มสะสมผลงานของฉัน
-        ทุกกิจกรรมที่ได้เข้าร่วมเป็นโอกาสในการเรียนรู้และพัฒนาตนเอง
-        และฉันพร้อมที่จะก้าวต่อไปบนเส้นทางวิศวกรรมโยธา
-      </p>
-      <div class="quote">
-        <b>“Every challenge is an opportunity to learn and grow.”</b>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
 
-</main>
+        window.addEventListener("scroll", function () {
 
-<footer>
-  <p><strong>ATCHARA THABTHIMHIN</strong></p>
-  <p>Portfolio • Civil Engineering Aspirant</p>
-  <p>© <span id="year"></span> All Rights Reserved.</p>
-</footer>
+            if (window.scrollY > 500) {
 
-<button id="topBtn" aria-label="กลับขึ้นด้านบน">↑</button>
+                topButton.classList.add("show");
 
-<script>
-const reveals = document.querySelectorAll('.reveal');
+            } else {
 
-const observer = new IntersectionObserver((entries)=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      entry.target.classList.add('show');
-      observer.unobserve(entry.target);
-    }
-  });
-},{threshold:0.12});
+                topButton.classList.remove("show");
 
-reveals.forEach(el=>observer.observe(el));
+            }
 
-const topBtn = document.getElementById('topBtn');
+        });
 
-window.addEventListener('scroll',()=>{
-  topBtn.style.display = window.scrollY > 450 ? 'block' : 'none';
-});
 
-topBtn.addEventListener('click',()=>{
-  window.scrollTo({top:0,behavior:'smooth'});
-});
+        topButton.addEventListener("click", function () {
 
-document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+            window.scrollTo({
+
+                top: 0,
+
+                behavior: "smooth"
+
+            });
+
+        });
+
+
+
+        /* =========================
+           NAVBAR ACTIVE LINK
+        ========================= */
+
+        const sections =
+            document.querySelectorAll("section[id]");
+
+        const navLinks =
+            document.querySelectorAll(".nav-links a");
+
+
+        window.addEventListener("scroll", function () {
+
+            let current = "";
+
+            sections.forEach(section => {
+
+                const sectionTop =
+                    section.offsetTop - 150;
+
+                if (window.scrollY >= sectionTop) {
+
+                    current = section.getAttribute("id");
+
+                }
+
+            });
+
+
+            navLinks.forEach(link => {
+
+                link.classList.remove("active");
+
+                if (
+                    link.getAttribute("href") ===
+                    "#" + current
+                ) {
+
+                    link.classList.add("active");
+
+                }
+
+            });
+
+        });
+
+
+
+        /* =========================
+           FADE-IN ANIMATION
+        ========================= */
+
+        const observer =
+            new IntersectionObserver(
+
+                entries => {
+
+                    entries.forEach(entry => {
+
+                        if (entry.isIntersecting) {
+
+                            entry.target.style.opacity = "1";
+
+                            entry.target.style.transform =
+                                "translateY(0)";
+
+                        }
+
+                    });
+
+                },
+
+                {
+                    threshold: 0.08
+                }
+
+            );
+
+
+        document
+            .querySelectorAll(
+                ".timeline-card, .stat-card, .skill, .education-card, .profile-box, .contact-card"
+            )
+            .forEach(element => {
+
+                element.style.opacity = "0";
+
+                element.style.transform =
+                    "translateY(20px)";
+
+                element.style.transition =
+                    "opacity .6s ease, transform .6s ease";
+
+                observer.observe(element);
+
+            });
+
+    </script>
+
 
 </body>
 </html>
